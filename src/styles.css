@@ -1,7 +1,8 @@
 body {
 }
+
 h1 {
-  padding-top: 6px;
+  color: white;
 }
 
 .today {
@@ -11,14 +12,20 @@ h1 {
   color: white;
 }
 
-h4 {
-  padding-top: 12px;
+h2 {
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+
+.five-day {
+  font-size: 18px;
+  color: rgb(14, 13, 71);
 }
 
 .app {
   margin: 70px 70px 0 0;
   padding: 30px 20px;
-  max-width: 600px;
+  max-width: 700px;
   border-radius: 8px;
   border: 1px solid rgb(211, 211, 211);
   background: linear-gradient(
@@ -29,16 +36,24 @@ h4 {
 }
 
 .my-form {
-  max-width: 480px;
+  max-width: 580px;
+  margin-bottom: 20px;
+}
+
+.icon-cap-main {
+  margin-top: 10px;
 }
 
 .icon-cap {
   margin-top: 40px;
 }
 
-.city {
-  margin-top: 20px;
-  color: white;
+#search {
+  padding: 7px 20px;
+}
+
+#current-btn {
+  left: 20 px;
 }
 
 .my-card-body {
@@ -48,11 +63,6 @@ h4 {
 
 .my-col {
   margin: 5px;
-}
-
-.five-day {
-  font-size: 16px;
-  color: rgb(14, 13, 71);
 }
 
 .tex-top-card {
@@ -74,10 +84,17 @@ h4 {
   font-weight: 600;
 }
 
-.temperatute {
-  padding-top: 8px;
-  font-size: 22px;
-  font-weight: 700;
+#main-icon {
+  left: 0;
+}
+.temperature-today {
+  margin-left: 98px;
+  margin-top: -88px;
+}
+
+#temperature {
+  font-size: 60px;
+  font-weight: 500;
 }
 
 .rain {
@@ -93,10 +110,12 @@ h4 {
 .cel-far {
   font-size: 16px;
   position: relative;
-  top: -16px;
+  top: -28px;
+  color: rgb(117, 177, 218);
 }
 #celsius-link,
 #fahrenheit-link {
   text-decoration: none !important;
   color: rgb(117, 177, 218) !important;
 }
+
