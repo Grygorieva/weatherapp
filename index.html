@@ -18,158 +18,184 @@
   </head>
 
   <body>
-   <div class="container"> 
-    <div class="app">
-      <form class="my-form" id="main-form">
+    <div class="container">
+      <div class="app">
+        <form class="my-form" id="main-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="text"
+                class="form-control"
+                aria-describedby="emailHelp"
+                placeholder="Enter the city"
+                id="city-input"
+              />
+            </div>
+            <div class="col-2">
+              <button type="submit" class="btn btn-success" id="search">
+                Search
+              </button>
+            </div>
+            <div class="col-1">
+              <button
+                type="submit"
+                class="btn btn-light my-btn-secondary"
+                id="current-btn"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
         <div class="row">
-          <div class="col-8">
-            <input
-              type="text"
-              class="form-control"
-              aria-describedby="emailHelp"
-              placeholder="Enter the city"
-              id="city-input"
+          <div class="col-6 today">
+            <div id="main-icon">
+              <img
+                src="imges/clowd.svg"
+                alt="clowd"
+                class="icon-cap-main"
+                width="90px"
+                height="90px"
+              />
+            </div>
+
+            <div class="temperature-today">
+              <span class="" id="temperature"></span>
+              <span class="cel-far">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-2 today">
+            <img
+              src="imges/cap.svg"
+              alt="cap"
+              class="icon-cap"
+              width="30px"
+              height="30px"
             />
+            <p class="maine-rain">
+              Humidity:<br /><strong id="humidity"></strong>%
+            </p>
           </div>
-          <div class="col-2">
-            <button type="submit" class="btn btn-success" id="search">Search</button>
+
+          <div class="col-2 today">
+            <img
+              src="imges/wind.svg"
+              alt="cap"
+              class="icon-cap"
+              width="30px"
+              height="30px"
+            />
+            <p class="maine-rain">
+              Wind:<br /><strong id="wind">12</strong>m/c
+            </p>
           </div>
-          <div class="col-2">
-            <button type="submit" class="btn btn-light my-btn-secondary" id="current-btn">
-              Current
-            </button>
-          </div>
-        </div>
-      </form>
-      <div class="row">
-        <div class="col-7">
-          <h1 class="city">
-            <i class="fa-solid fa-cloud icont-main"
-              ><img
-                src="imges/clowd.svg"
-                alt="clowd"
-                width="58px"
-                height="54px" /></i
-            ><span id="temperature"></span>
-            <span class="cel-far">
-              <a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
-            </span>
-            <span id="city">Berlin</span>
-          </h1>
-        </div>
-        <div class="col-2 today">
-          <img
-            src="imges/cap.svg"
-            alt="cap"
-            class="icon-cap"
-            width="30px"
-            height="30px"
-          />
-          <p class="maine-rain">Rain:<br /><strong id="humidity"></strong>%</p>
-        </div>
-        <div class="col-3">
-          <p class="today">
+          <div class="col-2 today">
             <p class="today">
-            <span id="date"></span>
-            <br />
-
-          </p>
-          </p>
+              <span id="date"></span>
+            </p>
+          </div>
+        </div>
+        <h1>
+          <span id="city">Berlin</span>
+        </h1>
+        <h2 class="five-day">Next 5 days forecast:</h2>
+        <div class="row my-card">
+          <div class="col my-col">
+            <div class="card h-100">
+              <div class="card-body my-card-body">
+                <h5 class="card-title tex-top-card">Sun<br />31.07</h5>
+                <img
+                  src="imges/sun.svg"
+                  alt="sun"
+                  width="56px"
+                  height="56px"
+                  class="icon-svg"
+                />
+                <p class="card-text weathe">Sunny</p>
+                <p class="temperatute">+25°</p>
+                <p class="rain">Rain: <strong>12%</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body my-card-body">
+                <h5 class="card-title tex-top-card">Mon<br />01.08</h5>
+                <img
+                  src="imges/sun.svg"
+                  alt="sun"
+                  width="56px"
+                  height="56px"
+                  class="icon-svg"
+                />
+                <p class="card-text weathe">Sunny</p>
+                <p class="temperatute">+23°</p>
+                <p class="rain">Rain: <strong>32%</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body my-card-body">
+                <h5 class="card-title tex-top-card">Tue<br />02.08</h5>
+                <img
+                  src="imges/clowd.svg"
+                  alt="clowd"
+                  width="56px"
+                  height="56px"
+                  class="icon-svg"
+                />
+                <p class="card-text weathe">Clouds</p>
+                <p class="temperatute">+20°</p>
+                <p class="rain">Rain: <strong>18%</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body my-card-body">
+                <h5 class="card-title tex-top-card">Wen<br />03.08</h5>
+                <img
+                  src="imges/sun_clowd.svg"
+                  alt="sun_clowd"
+                  width="58px"
+                  height="56px"
+                  class="icon-svg"
+                />
+                <p class="card-text weathe">Сlouds</p>
+                <p class="temperatute">+13°</p>
+                <p class="rain">Rain: <strong>32%</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 my-card">
+              <div class="card-body my-card-body">
+                <h5 class="card-title tex-top-card">Thu<br />04.08</h5>
+                <img
+                  src="imges/rain.svg"
+                  alt="rain"
+                  width="56px"
+                  height="56px"
+                  class="icon-svg"
+                />
+                <p class="card-text weathe">Rainy</p>
+                <p class="temperatute">+15°</p>
+                <p class="rain">Rain: <strong>67%</strong></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <h4 class="five-day">Next 5 days forecast:</h4>
-      <div class="row my-card">
-        <div class="col my-col">
-          <div class="card h-100">
-            <div class="card-body my-card-body">
-              <h5 class="card-title tex-top-card">Sun<br />31.07</h5>
-              <img
-                src="imges/sun.svg"
-                alt="sun"
-                width="56px"
-                height="56px"
-                class="icon-svg"
-              />
-              <p class="card-text weathe">Sunny</p>
-              <p class="temperatute">+25°</p>
-              <p class="rain">Rain: <strong>12%</strong></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body my-card-body">
-              <h5 class="card-title tex-top-card">Mon<br />01.08</h5>
-              <img
-                src="imges/sun.svg"
-                alt="sun"
-                width="56px"
-                height="56px"
-                class="icon-svg"
-              />
-              <p class="card-text weathe">Sunny</p>
-              <p class="temperatute">+23°</p>
-              <p class="rain">Rain: <strong>32%</strong></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body my-card-body">
-              <h5 class="card-title tex-top-card">Tue<br />02.08</h5>
-              <img
-                src="imges/clowd.svg"
-                alt="clowd"
-                width="56px"
-                height="56px"
-                class="icon-svg"
-              />
-              <p class="card-text weathe">Clouds</p>
-              <p class="temperatute">+20°</p>
-              <p class="rain">Rain: <strong>18%</strong></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body my-card-body">
-              <h5 class="card-title tex-top-card">Wen<br />03.08</h5>
-              <img
-                src="imges/sun_clowd.svg"
-                alt="sun_clowd"
-                width="58px"
-                height="56px"
-                class="icon-svg"
-              />
-              <p class="card-text weathe">Сlouds</p>
-              <p class="temperatute">+13°</p>
-              <p class="rain">Rain: <strong>32%</strong></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 my-card">
-            <div class="card-body my-card-body">
-              <h5 class="card-title tex-top-card">Thu<br />04.08</h5>
-              <img
-                src="imges/rain.svg"
-                alt="rain"
-                width="56px"
-                height="56px"
-                class="icon-svg"
-              />
-              <p class="card-text weathe">Rainy</p>
-              <p class="temperatute">+15°</p>
-              <p class="rain">Rain: <strong>67%</strong></p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <small id="signed"
+        ><a href="https://github.com/Grygorieva/weatherapp">Open code,</a> by
+        Olena Grygorieva
+      </small>
     </div>
-    <small id="signed"><a href="https://github.com/Grygorieva/weatherapp">Open code,</a> by Olena Grygorieva</small>
-   </div>
     <script src="src/index.js"></script>
   </body>
 </html>
